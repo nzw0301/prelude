@@ -4,6 +4,9 @@
 (turn-off-auto-fill)
 (setenv "DICTIONARY" "en_US")
 
+;; shortcut key to adjust font size
+(global-set-key (kbd "C-+") 'text-scale-increase)
+(global-set-key (kbd "C--") 'text-scale-decrease)
 
 (cond
  ;; try hunspell at first
