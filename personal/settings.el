@@ -30,14 +30,13 @@
 
 (global-linum-mode) ;; show line number
 
-(add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
-
 ;; org-ref configure
-(setq reftex-default-bibliography '("~/Dropbox/papers/library.bib"))
-(setq org-ref-default-bibliography '("~/Dropbox/papers/library.bib"))
-(setq bibtex-completion-bibliography "~/Dropbox/papers/library.bib")
+(setq reftex-default-bibliography '("~/gdrive/papers/library.bib"))
+(setq org-ref-default-bibliography '("~/gdrive/papers/library.bib"))
+(setq bibtex-completion-bibliography "~/gdrive/papers/library.bib")
 (setq bibtex-completion-pdf-open-function 'org-open-file)
 
+; (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
 (require 'org)
 (require 'ox-latex)
 (require 'ox-reveal)
